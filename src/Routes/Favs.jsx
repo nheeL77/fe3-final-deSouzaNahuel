@@ -8,26 +8,28 @@ const Favs = () => {
 
   const {favState, themeState} = useContextGlobal();
   
-  console.log('-------favoritos-------')
+  console.log('Destacados')
   console.log(favState)
 
   return (
     <div className={themeState.theme}>
+
       <h1>Favs</h1>
+
       <div className="card-grid">
         {/* este componente debe consumir los destacados del localStorage */}
         {/* Deberan renderizar una Card por cada uno de ellos */}
-        {favState.map((fav) => {
-          return(
+
+        {favState.map((fav) => (
             <Card
               key={fav.id}
               name={fav.name}
               username={fav.username} 
               id={fav.id}
             />
-          )
-        })}
+        ))}
       </div>
+
     </div>
   );
 };

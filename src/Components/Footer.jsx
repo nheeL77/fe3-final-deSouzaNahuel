@@ -5,7 +5,7 @@ import { useContextGlobal } from './utils/global.context'
 const Footer = () => {
   const {themeState} = useContextGlobal();
   return (
-    <footer className={themeState.theme}>
+    <footer className={themeState.theme} style={{background: 'red'}}>
         <p>Powered by</p>
         <img src={logo} alt='DH-logo' />
     </footer>

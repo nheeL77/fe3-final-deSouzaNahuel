@@ -23,13 +23,13 @@ const Detail = () => {
 
   return (
     <div className={themeState.theme}>
-      <h1>Details</h1>
+      <h1>Detalles</h1>
       <table>
         <thead>
           <tr>
-            <th>Name</th>
+            <th>Nombre</th>
             <th>Email</th>
-            <th>Phone</th>
+            <th>Telefono</th>
             <th>Website</th>
           </tr>
         </thead>
