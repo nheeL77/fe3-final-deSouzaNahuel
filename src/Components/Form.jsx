@@ -68,7 +68,7 @@ const Form = () => {
           value={contact.email}
           onChange={handleChange}
         />
-        <button onClick={handleClick}>Send</button>
+        <button onClick={handleClick}>Enviar</button>
       </form>
 
       {show && Object.keys(errors).length === 0 ? (
